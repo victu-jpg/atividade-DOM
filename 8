@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>8</title>
+    <style>
+        #circulo{
+            width: 70px;
+            height: 70px;
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        #quadrado {
+            width: 70px;
+            height: 70px;
+            background-color: blue;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="circulo"></div>
+    <div id="quadrado"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+let circulo = document.getElementById("circulo");
+let quadrado = document.getElementById("quadrado");
+circulo.style.backgroundColor = "blue";
+quadrado.style.backgroundColor = "red";
