@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>19</title>
+    <style>
+    #titulo-destaque {color: black; background-color: transparent; display: inline-block; padding: 5px;}
+    </style>
+</head>
+<body>
+<h1 id="titulo-destaque">Octopus’s Garden</h1>
+    <button id="botao19">Destacar</button>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const btnEx19 = document.getElementById('botao19')
+const tituloEx19 = document.getElementById('titulo-destaque')
+btnEx19.addEventListener('click', function(){
+    tituloEx19.style.color = 'white';
+    tituloEx19.style.backgroundColor = 'blue'
+})
