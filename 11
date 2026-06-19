@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>11</title>
+    <style>
+    #div-rosa { background-color: pink; padding: 15px; display: inline-block;}
+    #texto-preto { color: black; margin: 0;}
+    </style>
+</head>
+<body>
+<div id="divrosa">
+        <p id="textopreto">Strawberry Fields Forever</p>
+    </div>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const divRosa = document.getElementById('divrosa')
+const textoPreto = document.getElementById('textopreto')
+divRosa.style.backgroundColor = 'black'
+textoPreto.style.color = 'pink'
