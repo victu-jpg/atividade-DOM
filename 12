@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>12</title>
+    <style>
+    #elipse {width: 150px; height: 80px; background-color: gray; border-radius: 50%;}
+    </style>
+</head>
+<body>
+<div id="elipse"></div>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const elipse = document.getElementById('elipse')
+elipse.style.backgroundColor = 'cyan'
