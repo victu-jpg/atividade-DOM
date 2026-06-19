@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>10</title>
+    <style>
+     .container-divs {display: flex; gap: 10px;}
+     .div-pequena {width: 50px; height: 50px; background-color: gray;}
+    </style>
+</head>
+<body>
+<div class="container-divs">
+        <div class="div-pequena"></div>
+        <div class="div-pequena"></div>
+        <div class="div-pequena"></div>
+        <div class="div-pequena"></div>
+        <div class="div-pequena"></div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const divArcoIris = document.querySelectorAll('.div-pequena')
+divArcoIris[0].style.backgroundColor = 'red'
+divArcoIris[1].style.backgroundColor = 'orange'
+divArcoIris[2].style.backgroundColor = 'yellow'
+divArcoIris[3].style.backgroundColor = 'green'
+divArcoIris[4].style.backgroundColor = 'blue'
