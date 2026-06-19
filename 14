@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>14</title>
+    <style>
+    .circulo-vermelho {width: 100px; height: 100px; background-color: red; border-radius: 50%; margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+<div id="circulo-desafio14" class="circulo-vermelho"></div>
+<button id="trocar">Trocar cor</button>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const trocar = document.getElementById('trocar')
+const circuloEx14 = document.getElementById('circulo-desafio14')
