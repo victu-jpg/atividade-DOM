@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>13</title>
+    <style>
+    .quadradocinza {width: 100px; height: 100px; background-color: gray; margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+<div id="div-13" class="quadradocinza"></div>
+    <button id="div13">Mudar para azul</button>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const btnEx13 = document.getElementById('div13')
+const divEx13 = document.getElementById('div-13')
+btnEx13.addEventListener('click', function(){
+    divEx13.style.backgroundColor = 'blue'
+})
