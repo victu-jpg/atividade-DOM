@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>20</title>
+    <style>
+    #circulo-azul {width: 100px; height: 100px; background-color: blue; border-radius: 50%; margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+<div id="circulo-azul"></div>
+    <button id="botao20">Esconder</button>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const btnEx20 = document.getElementById('botao20')
+const circuloAzul = document.getElementById('circulo-azul')
+btnEx20.addEventListener('click', function(){
+    circuloAzul.style.display = 'none'; 
+})
