@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>15</title>
+    <style>
+    .quadrado-amarelo {width: 100px; height: 100px; background-color: yellow; margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+<div id="quadrado-15" class="quadrado-amarelo"></div>
+<button id="botaoazul">Azul</button>
+<button id="botaorosa">Rosa</button>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const btnEx15Azul = document.getElementById('botaoazul')
+const btnEx15Rosa = document.getElementById('botaorosa')
+const quadradoEx15 = document.getElementById('quadrado-15')
+btnEx15Azul.addEventListener('click', function(){
+    quadradoEx15.style.backgroundColor = 'blue'
+})
+btnEx15Rosa.addEventListener('click', function(){
+    quadradoEx15.style.backgroundColor = 'pink'
+})
