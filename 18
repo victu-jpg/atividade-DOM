@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>18</title>
+    <style>
+    .tres-quadrados {width: 50px; height: 50px; background-color: gray; display: inline-block; margin-right: 10px;}
+    </style>
+</head>
+<body>
+<div class="bloco">
+        <div class="tres-quadrados ex18"></div>
+        <div class="tres-quadrados ex18"></div>
+        <div class="tres-quadrados ex18"></div>
+    </div>
+    <button id="btn-ex18">Colorir</button>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const btnEx18 = document.getElementById('btn-ex18')
+const tresQuadrados = document.querySelectorAll('.ex18')
+btnEx18.addEventListener('click', function(){
+    tresQuadrados[0].style.backgroundColor = 'red'
+    tresQuadrados[1].style.backgroundColor = 'green'
+    tresQuadrados[2].style.backgroundColor = 'blue'
+})
