@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>16</title>
+    <style>
+    .retangulo-branco {width: 200px; height: 100px; background-color: white; border: 1px solid black; margin-bottom: 10px; padding: 10px;}
+    </style>
+</head>
+<body>
+<div id="retangulo-16" class="retangulo-branco">
+    <p id="texto-16">I look at you all, see the love there that's sleeping.
+While my guitar gently weeps</p>
+    </div>
+    <button id="botao16">Modo Escuro</button>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const btnEx16 = document.getElementById('botao16')
+const retanguloEx16 = document.getElementById('retangulo-16')
+const textoEx16 = document.getElementById('texto-16')
+btnEx16.addEventListener('click', function(){
+    retanguloEx16.style.backgroundColor = 'black'
+    textoEx16.style.color = 'white'
+})
