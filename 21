@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>21</title>
+    <style>
+    #circulo-azul {width: 100px; height: 100px; background-color: blue; border-radius: 50%; margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+<div id="div21" style="background-color: green; color: white; padding: 20px; width: 200px; margin-bottom: 10px;">
+        Texto original da div verde
+    </div>
+    <button id="botao21">Mostrar mensagem</button>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const btnEx21 = document.getElementById('botao21')
+const divEx21 = document.getElementById('div21')
+btnEx21.addEventListener('click', function(){
+    divEx21.innerText = "Cor alterada com sucesso!"
+})
