@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>17</title>
+    <style>
+    .div-laranja {width: 150px; height: 100px; background-color: orange; margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+<div id="div-17" class="div-laranja"></div>
+<button id="botao17">Limpar cor</button>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const btnEx17 = document.getElementById('botao17')
+const divEx17 = document.getElementById('div-17')
+btnEx17.addEventListener('click', function(){
+    divEx17.style.backgroundColor = 'white'
+})
