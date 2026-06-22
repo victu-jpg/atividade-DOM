@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>23</title>
+    <style>
+.divalternada{
+width: 100px;
+height: 100px;
+background-color: red;
+margin-top: 20px;
+margin-bottom: 15px;
+transition: background-color 0.5s;
+}
+button{
+padding: 7px 7px;
+font-size: 14px;
+cursor: pointer;
+}
+hr{
+margin: 20px 0;
+border: 0;
+border-top: 1px solid #ccc;
+}
+    </style>
+</head>
+<body>
+<div id="minhaDiv" class="divalternada"></div>
+    <button id="botaoAlternar">Alternar cor</button>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const botaoAlternar = document.getElementById('botaoAlternar')
+const minhaDiv = document.getElementById('minhaDiv')
+botaoAlternar.addEventListener('click', () =>{
+    const corAtual = minhaDiv.style.backgroundColor
+    if (corAtual === 'red' || corAtual === 'rgb(255, 0, 0)'){
+        minhaDiv.style.backgroundColor = 'green'
+        alert('Cor mudada para verde')
+    } else {
+        minhaDiv.style.backgroundColor = 'red'
+        alert('Cor mudada para vermelho')
+    }
+})
