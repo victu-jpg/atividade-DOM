@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>22</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+    .container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+    .quadrado{
+    width: 80px;
+    height: 80px;
+    background-color: gray;
+    transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+    </div>
+    <button id="botaoColorir">Colorir tudo</button>
+</body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+const btnColorir = document.getElementById('botaoColorir')
+const quadrados = document.querySelectorAll('.quadrado')
+const cores = ['red', 'orange', 'yellow', 'green', 'blue']
+btnColorir.addEventListener('click', () =>{
+    quadrados.forEach((quadrado, index) =>{
+        quadrado.style.backgroundColor = cores[index]
+    })
+    alert('Os quadrados foram coloridos')
+})
